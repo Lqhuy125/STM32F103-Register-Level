@@ -1,0 +1,5 @@
+uart.c:6:6:uart_UART2_putc	16	static
+uart.c:15:6:uart_UART2_puts	16	static
+uart.c:22:6:uart2_write_integer	32	static
+uart.c:44:6:uart_UART2_GPIO_config	4	static
+uart.c:68:6:uart_UART2_config	24	static
