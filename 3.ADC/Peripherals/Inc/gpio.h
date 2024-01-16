@@ -26,4 +26,5 @@ void gpioA_config();
 void gpioA_WritePin(uint16_t pin, GPIO_PinState PinState);
 
 GPIO_PinState gpioA_ReadPin(uint16_t pin);
+
 #endif /* INC_GPIO_H_ */

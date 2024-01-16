@@ -1,2 +1,6 @@
-adc.c:11:6:adc_GPIO_config	4	static
-adc.c:15:6:adc_single_config	4	static
+adc.c:14:6:adc_GPIO_config	4	static
+adc.c:31:6:adc_single_config	24	static
+adc.c:56:6:adc_Start	4	static
+adc.c:62:6:adc_Stop	4	static
+adc.c:70:6:adc_poll_For_End_of_Conservation	24	static
+adc.c:83:10:adc_readValue	4	static

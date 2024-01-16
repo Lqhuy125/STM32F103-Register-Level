@@ -12,4 +12,8 @@
 #include <stdint.h>
 #include <stdbool.h>
 
+#include "rcc.h"
+#include "gpio.h"
+#include "uart.h"
+
 #endif /* INC_MAIN_H_ */

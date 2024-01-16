@@ -18,7 +18,7 @@ C_DEPS += \
 
 # Each subdirectory must supply rules for building sources it contributes
 Core/Src/main.o: ../Core/Src/main.c
-	arm-none-eabi-gcc "$<" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32F103xB -c -I"D:/Users/Desktop/Register/3.ADC/CMSIS/Include" -I"D:/Users/Desktop/Register/3.ADC/Core/Inc" -I"D:/Users/Desktop/Register/3.ADC/Peripherals/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"$@" --specs=nano.specs -mfloat-abi=soft -mthumb -o "$@"
+	arm-none-eabi-gcc "$<" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32F103xB -c -I"D:/Users/Desktop/Register/STM32F103-Register-Level/3.ADC/CMSIS/Include" -I"D:/Users/Desktop/Register/STM32F103-Register-Level/3.ADC/Core/Inc" -I"D:/Users/Desktop/Register/STM32F103-Register-Level/3.ADC/Peripherals/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"$@" --specs=nano.specs -mfloat-abi=soft -mthumb -o "$@"
 Core/Src/system_stm32f1xx.o: ../Core/Src/system_stm32f1xx.c
-	arm-none-eabi-gcc "$<" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32F103xB -c -I"D:/Users/Desktop/Register/3.ADC/CMSIS/Include" -I"D:/Users/Desktop/Register/3.ADC/Core/Inc" -I"D:/Users/Desktop/Register/3.ADC/Peripherals/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32f1xx.d" -MT"$@" --specs=nano.specs -mfloat-abi=soft -mthumb -o "$@"
+	arm-none-eabi-gcc "$<" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32F103xB -c -I"D:/Users/Desktop/Register/STM32F103-Register-Level/3.ADC/CMSIS/Include" -I"D:/Users/Desktop/Register/STM32F103-Register-Level/3.ADC/Core/Inc" -I"D:/Users/Desktop/Register/STM32F103-Register-Level/3.ADC/Peripherals/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32f1xx.d" -MT"$@" --specs=nano.specs -mfloat-abi=soft -mthumb -o "$@"
 

@@ -5,7 +5,6 @@ static __IO uint32_t msTicks = 0;
 
 void rcc_HSE_config(void){
 
-
     /*  HSE = 8 MHZ
      *  AHB prescaler = 1
      *  PLLMUX = 9
@@ -42,12 +41,12 @@ void rcc_HSE_config(void){
     RCC->CFGR &= ~(RCC_CFGR_HPRE); // clear and 0xxx: SYSCLK not divided
     //APB1 prescaler /2
     RCC->CFGR &= ~(RCC_CFGR_PPRE1);
-    RCC->CFGR |= RCC_CFGR_PPRE1_DIV2;
+    RCC->CFGR |= RCC_CFGR_PPRE1_DIV2; //clk = 72 MHz, timer clock = 36 MHz
     //APB2 prescaler /1
-    RCC->CFGR &= ~(RCC_CFGR_PPRE2);
+    RCC->CFGR &= ~(RCC_CFGR_PPRE2); //72MHz
     //ADC prescaler
     RCC->CFGR &= ~(RCC_CFGR_ADCPRE);
-    RCC->CFGR |= RCC_CFGR_ADCPRE_DIV6;
+    RCC->CFGR |= RCC_CFGR_ADCPRE_DIV6; // => 12MHZ
 }
 
 void rcc_SysTick_config(uint32_t arr){
