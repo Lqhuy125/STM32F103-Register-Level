@@ -1,0 +1,6 @@
+uart.c:16:17:compute_uart_bd	16	static
+uart.c:22:13:uart_set_baudrate	24	static
+uart.c:27:6:uart2_write	16	static
+uart.c:36:6:uart2_write_string	16	static
+uart.c:43:6:uart2_write_integer	32	static
+uart.c:65:6:setup	8	static
