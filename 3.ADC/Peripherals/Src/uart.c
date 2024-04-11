@@ -1,13 +1,13 @@
 #include "uart.h"
 
-#define Perpher_CLK 36000000
-#define Baudrate  115200
+#define Perpher_CLK 18000000
+#define Baudrate  9600
 
 void uart_UART2_putc(char ch)
 {
   /*Make sure the transmit data register is empty*/
-  while(!(USART2->SR & USART_SR_TXE)){}
-
+  while(!(USART2->SR & USART_SR_TXE)); // Nếu message đang được truyền
+                                       // thì hàm này sẽ không xảy ra
   /*Write to transmit data register*/
   USART2->DR  =  (ch & 0xFF);
 }

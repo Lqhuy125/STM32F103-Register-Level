@@ -41,7 +41,7 @@ void rcc_HSE_config(void){
     RCC->CFGR &= ~(RCC_CFGR_HPRE); // clear and 0xxx: SYSCLK not divided
     //APB1 prescaler /2
     RCC->CFGR &= ~(RCC_CFGR_PPRE1);
-    RCC->CFGR |= RCC_CFGR_PPRE1_DIV2; //clk = 72 MHz, timer clock = 36 MHz
+    RCC->CFGR |= RCC_CFGR_PPRE1_DIV4; //clk = 72 MHz, timer clock = 36 MHz
     //APB2 prescaler /1
     RCC->CFGR &= ~(RCC_CFGR_PPRE2); //72MHz
     //ADC prescaler

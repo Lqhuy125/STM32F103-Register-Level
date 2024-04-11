@@ -1,6 +1,10 @@
-adc.c:14:6:adc_GPIO_config	4	static
-adc.c:31:6:adc_single_config	24	static
-adc.c:56:6:adc_Start	4	static
-adc.c:62:6:adc_Stop	4	static
-adc.c:70:6:adc_poll_For_End_of_Conservation	24	static
-adc.c:83:10:adc_readValue	4	static
+core_cm3.h:1511:22:__NVIC_EnableIRQ	16	static
+core_cm3.h:1547:22:__NVIC_DisableIRQ	16	static,ignoring_inline_asm
+adc.c:3:6:adc_GPIO_config	4	static
+adc.c:17:6:adc_single_config	24	static
+adc.c:47:6:adc_Start	4	static
+adc.c:53:6:adc_Stop	4	static
+adc.c:58:6:adc_poll_For_End_of_Conservation	24	static
+adc.c:68:10:adc_readValue	4	static
+adc.c:73:6:adc_enableEOC	8	static
+adc.c:79:6:adc_disableEOC	8	static

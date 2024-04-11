@@ -1,0 +1,8 @@
+"Core/Src/main.o"
+"Core/Src/syscalls.o"
+"Core/Src/sysmem.o"
+"Core/Src/system_stm32f1xx.o"
+"Peripherals/Src/dht.o"
+"Peripherals/Src/rcc.o"
+"Peripherals/Src/uart.o"
+"Startup/startup_stm32f103c8tx.o"

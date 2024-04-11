@@ -54,8 +54,8 @@ all: main-build
 main-build: 2.EXTI_BUTTON.elf secondary-outputs
 
 # Tool invocations
-2.EXTI_BUTTON.elf: $(OBJS) $(USER_OBJS) D:\Users\Desktop\Register\2.EXTI_BUTTON\STM32F103C8TX_FLASH.ld
-	arm-none-eabi-gcc -o "2.EXTI_BUTTON.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"D:\Users\Desktop\Register\2.EXTI_BUTTON\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="2.EXTI_BUTTON.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+2.EXTI_BUTTON.elf: $(OBJS) $(USER_OBJS) D:\Users\Desktop\Learn\Register\STM32F103-Register-Level\2.EXTI_BUTTON\STM32F103C8TX_FLASH.ld
+	arm-none-eabi-gcc -o "2.EXTI_BUTTON.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"D:\Users\Desktop\Learn\Register\STM32F103-Register-Level\2.EXTI_BUTTON\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="2.EXTI_BUTTON.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

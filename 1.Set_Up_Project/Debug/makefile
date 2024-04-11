@@ -54,8 +54,8 @@ all: main-build
 main-build: 1.Set_Up_Project.elf secondary-outputs
 
 # Tool invocations
-1.Set_Up_Project.elf: $(OBJS) $(USER_OBJS) D:\Users\Desktop\Register\1.Set_Up_Project\STM32F103C8TX_FLASH.ld
-	arm-none-eabi-gcc -o "1.Set_Up_Project.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"D:\Users\Desktop\Register\1.Set_Up_Project\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="1.Set_Up_Project.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+1.Set_Up_Project.elf: $(OBJS) $(USER_OBJS) D:\Users\Desktop\Learn\Register\STM32F103-Register-Level\1.Set_Up_Project\STM32F103C8TX_FLASH.ld
+	arm-none-eabi-gcc -o "1.Set_Up_Project.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"D:\Users\Desktop\Learn\Register\STM32F103-Register-Level\1.Set_Up_Project\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="1.Set_Up_Project.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

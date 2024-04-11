@@ -1,0 +1,5 @@
+adc.c:3:6:adc_gpio_config	4	static
+adc.c:10:6:adc_config	4	static
+adc.c:27:6:adc_start	4	static
+adc.c:32:6:adc_stop	4	static
+adc.c:36:10:adc_readValue	4	static

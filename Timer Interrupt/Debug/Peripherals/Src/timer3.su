@@ -1,0 +1,4 @@
+core_cm3.h:1511:22:__NVIC_EnableIRQ	16	static
+timer3.c:11:6:timer3_config	4	static
+timer3.c:26:13:delay_ms	24	static
+timer3.c:34:6:timer3_config_interupt	8	static

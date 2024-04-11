@@ -33,6 +33,12 @@ void gpioC_WritePin(uint16_t pin, GPIO_PinState PinState){
   }
 }
 
+void gpioC_toggle(uint16_t pin)
+{
+  GPIOC->ODR ^= (1UL << pin);
+}
+
+
 GPIO_PinState gpioC_ReadPin(uint16_t pin){
   return (bool)(GPIOC->IDR & (1UL << pin));
 }

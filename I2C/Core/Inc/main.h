@@ -1,0 +1,21 @@
+/*
+ * main.h
+ *
+ *  Created on: Jan 7, 2024
+ *      Author: Quang Huy
+ */
+
+#ifndef INC_MAIN_H_
+#define INC_MAIN_H_
+
+#include "stm32f1xx.h"
+#include <stdint.h>
+#include <stdbool.h>
+
+#include <uart2.h>
+#include "rcc.h"
+#include "gpio.h"
+#include "i2c.h"
+
+
+#endif /* INC_MAIN_H_ */

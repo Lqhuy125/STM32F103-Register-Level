@@ -18,6 +18,6 @@ void rcc_msIncTicks(void);
 
 uint32_t rcc_msGetTicks(void);
 
-void rcc_msDelay(uint32_t  ms);
+void rcc_msDelay(uint32_t ms);
 
 #endif /* INC_RCC_H_ */

@@ -24,4 +24,6 @@ uint32_t rcc_msGetTicks(void);
  *   ms Delay
  */
 void rcc_msDelay(uint32_t  ms);
+
+void rcc_sDelay(uint32_t s);
 #endif /* INC_RCC_H_ */

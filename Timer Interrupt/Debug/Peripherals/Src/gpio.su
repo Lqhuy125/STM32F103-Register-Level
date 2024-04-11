@@ -1,0 +1,3 @@
+gpio.c:3:6:gpio_led_config	4	static
+gpio.c:25:6:gpio_button_config	4	static
+gpio.c:36:6:gpio_digitalRead	4	static

@@ -1,0 +1,9 @@
+dht.c:11:6:dht_Init	8	static
+dht.c:22:6:dht_Reset	8	static
+dht.c:32:9:dht_Check	16	static
+dht.c:63:9:dht_Read_Bit	16	static
+dht.c:88:9:dht_Read_Byte	16	static
+dht.c:101:10:dht_Read_Data	32	static
+dht.c:131:6:dht_Start	8	static
+dht.c:141:9:dht_Check_Response	16	static
+dht.c:167:6:DHT11_Read	24	static

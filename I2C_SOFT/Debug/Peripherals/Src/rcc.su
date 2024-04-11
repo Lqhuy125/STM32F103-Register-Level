@@ -1,0 +1,4 @@
+rcc.c:3:6:rcc_HSE_config	4	static
+rcc.c:46:6:rcc_TIMER3_config	4	static
+rcc.c:63:6:delay_us	24	static
+rcc.c:78:6:delay_ms	24	static

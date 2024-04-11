@@ -35,8 +35,9 @@
 
 #include "main.h"
 
+void uart_UART2_GPIO_config();
 void uart2_write(char ch);
 void uart2_write_string(char *str);
 void uart2_write_integer(int value);
-void setup();
+
 #endif /* INC_UART_H_ */

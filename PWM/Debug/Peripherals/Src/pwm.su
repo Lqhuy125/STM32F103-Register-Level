@@ -1,0 +1,2 @@
+pwm.c:10:6:pwm_single_config	16	static
+pwm.c:43:6:pwm_SetDuty	16	static

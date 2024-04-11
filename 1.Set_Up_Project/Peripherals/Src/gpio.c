@@ -14,6 +14,10 @@
 //    #define GPIO_PORT     GPIOC
 //#endif
 
+#define bit_band_base 0x42000000
+#define byte_offset 0x4001100C
+#define bit_number 13
+#define bit_word_addr *(uint32_t *)(bit_band_base+(byte_offset*32)+(bit_number*4))
 void gpio_LED_config(){
   //Enable port clock
   RCC->APB2ENR &= ~(RCC_APB2ENR_IOPCEN); //clear
@@ -25,12 +29,13 @@ void gpio_LED_config(){
   GPIOC->CRH &= ~(3UL << 22); //00: General purpose output push-pull
 }
 void gpio_digitalWrite(uint8_t pin ,bool state){
-  if(state){
-    GPIOC->ODR |= (1UL << pin);
-  }
-  else{
-    GPIOC->ODR &= ~(1UL << pin);
-  }
+  bit_word_addr = state;
+//  if(state){
+//    GPIOC->ODR |= (1UL << pin);
+//  }
+//  else{
+//    GPIOC->ODR &= ~(1UL << pin);
+//  }
 
 }
 void gpio_LED_toggle(uint8_t pin){

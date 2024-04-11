@@ -1,0 +1,8 @@
+i2c.c:9:6:delay	24	static
+i2c.c:13:6:i2c_Init	4	static
+i2c.c:58:6:i2c_Scanbus	16	static
+i2c.c:94:6:i2c_Start	4	static
+i2c.c:110:6:i2c_Stop	4	static
+i2c.c:114:6:i2c_Write	16	static
+i2c.c:124:6:i2c_Address	24	static
+i2c.c:134:6:I2C_WriteMulti	16	static

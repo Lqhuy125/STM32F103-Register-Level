@@ -1,10 +1,3 @@
-/*
- * adc.h
- *
- *  Created on: Jan 7, 2024
- *      Author: Quang Huy
- */
-
 #ifndef INC_ADC_H_
 #define INC_ADC_H_
 
@@ -12,6 +5,9 @@
 
 //ADC Single channel select
 
+/*
+ *  @brief ADC GPIO pins PA5-POT, PA4-X, PA3-Y
+ */
 typedef enum{
   Potemtionmeter = 5,
   Joystick_x = 4,
@@ -44,5 +40,8 @@ bool adc_poll_For_End_of_Conservation(uint32_t timeOut );
  * @brief adc value
  */
 uint16_t adc_readValue();
+
+void adc_enableEOC();
+void adc_disableEOC();
 
 #endif /* INC_ADC_H_ */

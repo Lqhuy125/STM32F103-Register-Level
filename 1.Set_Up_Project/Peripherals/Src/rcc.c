@@ -37,12 +37,17 @@ void rcc_HSE_config(){
   //Prefetch buffer enable
   FLASH->ACR |= (1UL << 4); //set
 
-  //select system clock switch
+  /* select system clock switch
+   * PLLCLK is source
+   */
   RCC->CFGR &= ~(RCC_CFGR_SW); //clear
   RCC->CFGR |= (2UL << 0); //set
   while( (RCC->CFGR & RCC_CFGR_SWS_PLL) == 0); //wait
 
-  //Preipherals clock setup
+   /* Preipherals clock setup
+    *
+    *
+    */
   //AHB prescaler
   RCC->CFGR &= ~(RCC_CFGR_HPRE); // clear and 0xxx: SYSCLK not divided
   //APB1 prescaler /2
@@ -76,6 +81,9 @@ uint32_t rcc_msGetTicks(void){
 void rcc_msDelay(uint32_t  ms){
   uint32_t startTicks = rcc_msGetTicks();
   while((rcc_msGetTicks() - startTicks) < ms);
+}
+void rcc_sDelay(uint32_t s){
+  rcc_msDelay(s * 1000); // Chuyển đổi milliseconds thành microseconds
 }
 void SysTick_Handler(void){
   NVIC_ClearPendingIRQ(SysTick_IRQn); // Clear Flag
